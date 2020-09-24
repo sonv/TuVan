@@ -1,17 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'longtime-degenerate-HJ.blg'
-[99] biber:322> INFO - === Thu Sep 24, 2020, 13:08:49
+[99] biber:322> INFO - === Thu Sep 24, 2020, 13:28:54
 [114] Biber.pm:415> INFO - Reading 'longtime-degenerate-HJ.bcf'
-[190] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
-[207] Biber.pm:4256> INFO - Processing section 0
-[208] Utils.pm:75> INFO - Globbing data source 'bibliography.bib'
-[208] Utils.pm:91> INFO - Globbed data source 'bibliography.bib' to bibliography.bib
-[219] Biber.pm:4455> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[244] bibtex.pm:1653> INFO - LaTeX decoding ...
-[1402] bibtex.pm:1471> INFO - Found BibTeX data source 'bibliography.bib'
-[1496] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1496] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1497] Biber.pm:4084> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
-[1497] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[1499] bbl.pm:652> INFO - Writing 'longtime-degenerate-HJ.bbl' with encoding 'UTF-8'
-[1500] bbl.pm:755> INFO - Output to longtime-degenerate-HJ.bbl
+[193] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
+[209] Biber.pm:4256> INFO - Processing section 0
+[209] Utils.pm:75> INFO - Globbing data source 'bibliography.bib'
+[210] Utils.pm:91> INFO - Globbed data source 'bibliography.bib' to bibliography.bib
+[221] Biber.pm:4455> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[245] bibtex.pm:1653> INFO - LaTeX decoding ...
+[1391] bibtex.pm:1471> INFO - Found BibTeX data source 'bibliography.bib'
+[1482] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1482] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1482] Biber.pm:4084> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[1482] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[1484] bbl.pm:652> INFO - Writing 'longtime-degenerate-HJ.bbl' with encoding 'UTF-8'
+[1485] bbl.pm:755> INFO - Output to longtime-degenerate-HJ.bbl
