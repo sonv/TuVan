@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage[draft]{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Convergence rate to equilibrium to a Hamilton-Jacobi equation }
+%\author[1]{Co-author}
+\author{Truong-Son Van}
+%\affil[1]{Institute}
+\affil{Carnegie Mellon University}
+\date{\today}
+
+\begin{document}
+
+%\linenumbers
+\maketitle
+
+\section{Introduction}
+We consider the following Hamilton-Jacobi equation 
+\begin{equation} \label{eq:main}
+    \begin{dcases}
+        \partial_t u(x,t) + \frac{u_x(x,t)^2}{2} + c(x)u(x,t) = 0     \\
+        u(x,0) = u_0(x) \,.
+    \end{dcases}
+\end{equation}
+
+The questions at hand are that suppose $c(x) \to 0$ as $x\to \infty$, e.g., $c(x) = \frac{1}{x}$, what are the
+\begin{itemize}
+    \item Wellposedness of stationary solution.
+    \item Rate of convergence to stationary solution.
+\end{itemize}
+
+There are papers that show exponential convergence of~\eqref{eq:main} when $c(x) \geq \gamma >0$ but nothing if $c(x)$ vanishes. In particular, suppose $c(x) \defeq 1 $, then the ergodic problem 
+
+\begin{equation}
+    \frac{\bar u_x^2}{2} + \bar u(x) = c 
+\end{equation}
+has a unique(?) solution.
+Then, it is known that 
+\begin{equation*}
+    \lim_{t\to\infty} \abs{ u(x,t) - \bar u(x)} \leq C_1e^{-C_2t} \,.
+\end{equation*}
+See~\cite{FujitaLoreti2009}.
+
+\section{Ergodic problem}
+We consider the ergodic problem 
+\begin{equation}\label{eq:ergodic}
+    \tag{E}
+    \frac{u}{x} + H(u_x) = c \qquad \text{for } x\in \R\,.
+\end{equation}
+
+We study the wellposedness of  this equation by the method of vanishing viscosity. 
+In particular, by classical theory of elliptic equations, the equation 
+\begin{equation} \label{eq:ergodic-eps}
+    \tag{E$_\epsilon$}
+    \frac{u}{x} + H(u_x) + \epsilon u_{xx} = 0 \quad \text{for } x \in \R 
+\end{equation}
+is wellposed. Thus, for each $\epsilon >0$, let $u^\epsilon$ be the unique solution of~\eqref{eq:ergodic-eps}.
+\begin{lemma}
+    There exists a constant $c$, a function $\bar u$ and a subsequence $\set{\epsilon_i}_{i\in \N}$ such that 
+    \begin{equation}
+        \frac{\bar u}{x} + H(\bar u_x) = c \,,
+    \end{equation}
+    and $u_{\epsilon_i} \to \bar u$ locally uniformly.
+\end{lemma}
+
+\printbibliography 
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
+
+
+\end{document}
