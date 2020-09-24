@@ -56,6 +56,45 @@
       \endverb
       \keyw{35F21 (35B40 49L25)}
     \endentry
+    \entry{TranVan2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=faad95e0ddcad00e314f872dadc03d61}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Hung\bibnamedelima V.},
+           giveni={H\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=4b38ffd859a3a5f72c34a2cb7b5a0feb}{%
+           family={Van},
+           familyi={V\bibinitperiod},
+           given={Truong-Son},
+           giveni={T\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae1941fbc729a3f66e3a0a0da48f5d01}
+      \strng{fullhash}{ae1941fbc729a3f66e3a0a0da48f5d01}
+      \strng{bibnamehash}{ae1941fbc729a3f66e3a0a0da48f5d01}
+      \strng{authorbibnamehash}{ae1941fbc729a3f66e3a0a0da48f5d01}
+      \strng{authornamehash}{ae1941fbc729a3f66e3a0a0da48f5d01}
+      \strng{authorfullhash}{ae1941fbc729a3f66e3a0a0da48f5d01}
+      \field{labelalpha}{TV20}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study a critical case of Coagulation-Fragmentation equations with multiplicative coagulation kernel and constant fragmentation kernel. Our method is based on the study of viscosity solutions to a new singular Hamilton-Jacobi equation, which results from applying the Bernstein transform to the original Coagulation-Fragmentation equation. Our results include wellposedness, regularity and long-time behaviors of viscosity solutions to the Hamilton-Jacobi equation in certain regimes, which have implications to wellposedness and long-time behaviors of \emph{mass-conserving} solutions to the Coagulation-Fragmentation equation.}
+      \field{eprintclass}{math.AP}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Accepted to Communications on Pure and Applied Mathematics}
+      \field{title}{Coagulation-Fragmentation equations with multiplicative coagulation kernel and constant fragmentation kernel}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 1910.13424v3
+      \endverb
+      \verb{file}
+      \verb :http\://arxiv.org/pdf/1910.13424v3:PDF
+      \endverb
+      \keyw{math.AP,35B65,35F21,35Q99,44A10,45J05}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

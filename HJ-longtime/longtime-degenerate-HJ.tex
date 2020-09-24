@@ -39,39 +39,28 @@ The questions at hand are that suppose $c(x) \to 0$ as $x\to \infty$, e.g., $c(x
     \item Rate of convergence to stationary solution.
 \end{itemize}
 
-There are papers that show exponential convergence of~\eqref{eq:main} when $c(x) \geq \gamma >0$ but nothing if $c(x)$ vanishes. In particular, suppose $c(x) \defeq 1 $, then the ergodic problem 
+There are papers that show exponential convergence of~\eqref{eq:main} when $c(x) \geq \gamma >0$ but nothing if $c(x)$ vanishes. In particular, suppose $c(x) \defeq 1 $, then the problem 
 
 \begin{equation}
-    \frac{\bar u_x^2}{2} + \bar u(x) = c 
+    \bar u + \frac{\bar u_x^2}{2}  =  0
 \end{equation}
-has a unique(?) solution.
+has a unique solution because we can use comparison prinple here.
 Then, it is known that 
 \begin{equation*}
-    \lim_{t\to\infty} \abs{ u(x,t) - \bar u(x)} \leq C_1e^{-C_2t} \,.
+    \lim_{t\to\infty} \abs{ u(x,t) -  \bar u(x)} \leq C_1e^{-C_2t} \,.
 \end{equation*}
-See~\cite{FujitaLoreti2009}.
+See~\cite{FujitaLoreti2009}. The proof of this boils down to constructing supersolution, which is not hard.
 
-\section{Ergodic problem}
+\section{Stationary problem}
 We consider the ergodic problem 
 \begin{equation}\label{eq:ergodic}
     \tag{E}
-    \frac{u}{x} + H(u_x) = c \qquad \text{for } x\in \R\,.
+    \frac{\bar u}{x} + H(\bar u_x) = 0 \qquad \text{for } x\in \R\,.
 \end{equation}
+This equation when $H(p) = p^2$ has two smooth solutions, $\bar u = x$ and $\bar u = 0$.
+Thus, to study wellposedness, we ought to impose more condition, e.g. sublinear property.
+To this end, we can use the cut-off trick in the paper~\cite{TranVan2019}.
 
-We study the wellposedness of  this equation by the method of vanishing viscosity. 
-In particular, by classical theory of elliptic equations, the equation 
-\begin{equation} \label{eq:ergodic-eps}
-    \tag{E$_\epsilon$}
-    \frac{u}{x} + H(u_x) + \epsilon u_{xx} = 0 \quad \text{for } x \in \R 
-\end{equation}
-is wellposed. Thus, for each $\epsilon >0$, let $u^\epsilon$ be the unique solution of~\eqref{eq:ergodic-eps}.
-\begin{lemma}
-    There exists a constant $c$, a function $\bar u$ and a subsequence $\set{\epsilon_i}_{i\in \N}$ such that 
-    \begin{equation}
-        \frac{\bar u}{x} + H(\bar u_x) = c \,,
-    \end{equation}
-    and $u_{\epsilon_i} \to \bar u$ locally uniformly.
-\end{lemma}
 
 \printbibliography 
 %\bibliography{refs}
